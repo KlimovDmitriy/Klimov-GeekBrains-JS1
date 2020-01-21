@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+    <script>
+        //Задание 1
+        var celsiumDegree = prompt('Введите температуру в градусах Цельсия');
+        while (isNaN(parseFloat(celsiumDegree, 10))) {
+            celsiumDegree = prompt('Вы ввели некоректную температуру! Введите температуру в градусах Цельсия');
+        }
+        console.log('Температура по Фаренгейту:' + ((9 / 5) * parseFloat(celsiumDegree) + 32) + 'F'); // Не смог придумать как обойти неявное приведение при вводе данных типа '10a'
+
+        //Задание 2
+        var name = 'Василий';
+        var admin;
+        admin = name;
+        console.log(admin);
+
+        //Задание 4
+        //Выведется значение 1000108
+
+        //Задание 5
+        //
+    </script>
+
+</body>
+
+</html>

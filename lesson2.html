@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta charset="utf-8" />
+
+</head>
+
+<body>
+    <script>
+        //Задание 1
+        // var a = 1,
+        //     b = 1,
+        //     c, d;
+        // c = ++a; //из-за префиксной формы инкремента сначала происходит инкремент переменной a, потом происходит присвоение значения c
+        // alert(c); // 2 
+        // d = b++; // из-за постфиксной формы инкремента сначала происходит присвоение значения 1 переменной d, потом происходит инкремент переменной b
+        // alert(d); // 1
+        // c = (2 + ++a); // префиксная форма, соответсвенно сначала инкремент, потом присвоение
+        // alert(c); // 5
+        // d = (2 + b++); //постфиксная форма, сначала присвоение, потом увеличение
+        // alert(d); // 4 
+        // alert(a); // 3 было 2 инкремента в коде
+        // alert(b); // 3 было 2 инкремента в коде
+
+        //Задание 2
+        // Чему будет равен x в примере ниже?
+        // var a = 2;
+        // var x = 1 + (a *= 2); x = 5, т.к. (a *= 2) == 4; x = 4 + 1 = 5
+
+        //Задание 3
+        var a = 5,
+            b = 4;
+        if (a < 0 && b < 0) {
+            console.log(a * b);
+        } else if (a >= 0 && b >= 0) {
+            console.log(a - b);
+        } else {
+            console.log(a + b);
+        }
+
+        //Задание 4
+        a = 10;
+        switch (a) {
+            case 0:
+                console.log('0')
+            case 1:
+                console.log('1')
+            case 2:
+                console.log('2')
+            case 3:
+                console.log('3')
+            case 4:
+                console.log('4')
+            case 5:
+                console.log('5')
+            case 6:
+                console.log('6')
+            case 7:
+                console.log('7')
+            case 8:
+                console.log('8')
+            case 9:
+                console.log('9')
+            case 10:
+                console.log('10')
+            case 11:
+                console.log('11')
+            case 12:
+                console.log('12')
+            case 13:
+                console.log('13')
+            case 14:
+                console.log('14')
+            case 15:
+                console.log('15')
+        }
+
+        // Задание 5
+        function sum(a, b) {
+            return a + b
+        }
+
+        function sub(a, b) {
+            return a - b
+        }
+
+        function multiply(a, b) {
+            return a * b
+        }
+
+        function division(a, b) {
+            return a / b
+        }
+
+        //Задание 6
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case 'sum':
+                    return sum(arg1, arg2)
+                    break;
+                case 'subtraction':
+                    return sub(arg1, arg2);
+                    break;
+                case 'division':
+                    return division(arg1, arg2)
+                    break;
+                case 'multyply':
+                    return multiply(arg1, arg2)
+                    break;
+            }
+        }
+
+        //Задание 7
+        // При строгом и нестрогом сравнении null и 0 всегда будет результат false. Это связано с тем, что при строгом сравнении изначально разные типы, а при нестрогом дело в том, что 0 - это заданое значение, а null - явно заданое отсутсвие любого значения
+
+        //Задание 8
+        function power(val, pow) {
+            if (pow > 0) {
+                return val * power(val, pow - 1);
+            } else if (pow < 0) {
+                return ((1 / val) * power(val, pow + 1))
+            } else {
+                return 1
+            }
+        }
+    </script>
+
+</body>
+
+</html>
